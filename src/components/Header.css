@@ -1,0 +1,47 @@
+header {
+    background-color: #2D852D;
+    color: white;
+}
+  
+.top-bar {
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.logo-info-container {
+    display: flex;
+    align-items: center; /* Vertikal sejajar tengah */
+  }
+
+.navbar .logo img {
+    width: 160px;
+    margin-right: 15px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #2D852D;
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    text-decoration: underline;
+}

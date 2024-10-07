@@ -1,0 +1,58 @@
+/* LoginForm.css */
+
+.login-form-container {
+  background-color: #E8F5D9; /* Hijau lembut */
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px; /* Lebar kontainer yang lebih besar */
+  margin: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-input {
+  width: 280px; /* Lebar input sama dengan tombol */
+  padding: 10px;
+  margin: 10px auto; /* Margin disesuaikan agar rata tengah */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block; /* Mengubah display agar memudahkan margin tengah */
+}
+
+.login-button {
+  width: 280px; /* Lebar tombol disamakan dengan input */
+  padding: 10px;
+  background-color: #61dafb;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto; /* Menjaga margin agar sesuai */
+  transition: background-color 0.3s ease;
+  display: block; /* Mengubah display agar memudahkan margin tengah */
+}
+
+.login-button:hover {
+  background-color: #21a1f1;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}

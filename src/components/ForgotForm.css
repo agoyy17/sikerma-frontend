@@ -1,0 +1,68 @@
+/* CSS untuk Forgot Password Form */
+
+.forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d4f0d4; /* Warna latar belakang hijau */
+  }
+  
+  .forgot-password-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forgot-password-logo {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2D852D; /* Warna hijau teks */
+  }
+  
+  .forgot-password-description {
+    font-size: 14px;
+    color: #2e4d23;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .forgot-password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .forgot-password-input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+  }
+  
+  .forgot-password-button {
+    padding: 10px 30px;
+    background-color: #2D852D;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .forgot-password-button:hover {
+    background-color: #246d24;
+  }
+  
