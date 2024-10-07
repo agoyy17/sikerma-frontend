@@ -1,75 +1,190 @@
 /* Home.css */
 
+/* Global Style */
 .home-container {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .logo {
-    height: 60px;
-  }
-  
-  .nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .welcome-banner {
-    background-color: #CCE5B2;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .welcome-banner h1 {
-    margin: 0;
-    color: #333;
-  }
-  
-  .map-section {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f4f4f4;
-  }
-  
-  .map-section h2 {
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .map-image {
-    width: 70%;
-    max-width: 800px;
-  }
-  
-  .info-section {
-    padding: 30px 50px;
-    text-align: center;
-  }
-  
-  .info-section p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
-  
-  .info-section .btn-mitra {
-    background-color: #E8F5D9;
-    color: #333;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .info-section .btn-mitra:hover {
-    background-color: #D2E8C0;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk Logo dan Navbar */
+.logo {
+  height: 60px;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner Selamat Datang */
+.welcome-banner {
+  background-color: #CCE5B2;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-banner h1 {
+  margin: 0;
+  color: #333;
+}
+
+/* Bagian Map Kerjasama */
+.map-section {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f4f4f4;
+}
+
+.map-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.map-image {
+  width: 70%;
+  max-width: 800px;
+}
+
+/* Bagian Informasi Kerjasama Global */
+.info-section {
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.info-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.info-section .btn-mitra {
+  background-color: #E8F5D9;
+  color: #333;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.info-section .btn-mitra:hover {
+  background-color: #D2E8C0;
+}
+
+/* Content Section Styling */
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.content-box {
+  width: 48%;
+  padding: 20px;
+  background: #f4f4f4;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.highlight {
+  color: #2D852D;
+}
+
+.cooperation-type {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.progress-fill {
+  height: 10px;
+  background-color: #2D852D;
+  text-align: right;
+  color: white;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+/* News Section Styling */
+.home-news {
+  margin-top: 40px;
+  padding: 20px 50px;
+}
+
+.news-title {
+  text-align: center;
+  color: #2D852D;
+  margin-bottom: 20px;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-item {
+  width: 30%;
+  background: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.news-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Bagian untuk menampilkan logo mitra */
+.partner-logos {
+  background-color: #f4f4f4;
+  padding: 40px 50px;
+  text-align: center;
+}
+
+.partner-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2D852D;
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.partner-logo {
+  width: 100px; /* Sesuaikan ukuran logo */
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
