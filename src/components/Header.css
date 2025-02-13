@@ -1,13 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     background-color: #2D852D;
     color: white;
 }
-  
+
+/* Top bar untuk teks sambutan */
 .top-bar {
     text-align: center;
     padding: 10px;
+    font-size: 0.9rem;
+    background-color: #2D852D;
+    color: white;
 }
 
+/* Navbar utama */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,19 +27,29 @@ header {
     background-color: white;
 }
 
+/* Container logo dan teks Informasi Kerjasama */
 .logo-info-container {
     display: flex;
-    align-items: center; /* Vertikal sejajar tengah */
-  }
+    align-items: center;
+}
 
 .navbar .logo img {
     width: 160px;
     margin-right: 15px;
 }
 
+.informasi-kerjasama {
+    font-size: 1.2rem;
+    color: #2D852D;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Link navigasi */
 .navbar .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
     margin: 0;
 }
 
@@ -42,6 +63,221 @@ header {
     font-weight: bold;
 }
 
-.navbar .nav-links li a:hover {
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a:focus {
     text-decoration: underline;
+    outline: 2px solid #2D852D; /* Gaya fokus */
 }
+
+/* Bagian kanan atas untuk user info */
+.user-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #2D852D;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+.user-info .icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Media query untuk layar dengan lebar maksimum 768px (tablet) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar .logo img {
+        width: 140px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .user-info {
+        margin-top: 10px;
+    }
+}
+
+/* Media query untuk layar dengan lebar maksimum 480px (ponsel) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar .logo img {
+        width: 120px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 8px 0;
+    }
+
+    .top-bar {
+        font-size: 0.8rem;
+    }
+
+    .user-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info span {
+        margin-bottom: 5px;
+    }
+}
+
+/* Dropdown Menu */
+.user-icon-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    right: 0;
+    top: 40px; /* Sesuaikan tinggi dropdown dari ikon */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: none; /* Sembunyikan menu secara default */
+    z-index: 1000;
+    border-radius: 5px;
+    list-style: none;
+}
+
+/* Tampilkan dropdown saat aktif */
+.user-icon-container.open .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    padding: 10px  15px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #2D852D;
+    display: block;
+}
+
+/* Notifikasi dan user-icon */
+.user-info img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.notification-container {
+    position: relative;
+  }
+  
+  .bell-icon {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notification-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+  }
+  
+  .notification-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 350px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .notification-title {
+    padding: 10px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-header {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .notification-message {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .notification-time {
+    font-size: 12px;
+    color: #888;
+  }
+  

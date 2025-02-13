@@ -1,0 +1,169 @@
+/* Container utama */
+.daftar-mitra-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Filter Container */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters select,
+  .filters input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1; /* Membuat elemen lebar otomatis di perangkat kecil */
+    min-width: 150px;
+  }
+  
+  .filters button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1; /* Lebar tombol mengikuti elemen lain */
+    min-width: 100px;
+  }
+  
+  /* Tabel */
+  .mitra-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow-x: auto;
+  }
+  
+  .mitra-table th,
+  .mitra-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .mitra-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Tombol Detail */
+  .detail-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .close-button {
+    font-size: 16px;
+  }
+}
+
+  /* Responsif */
+  @media (max-width: 768px) {
+    /* Gaya untuk tablet dan perangkat kecil */
+    .filters {
+      flex-direction: column; /* Ubah elemen filter menjadi kolom */
+    }
+  
+    .filters select,
+    .filters input,
+    .filters button {
+      flex: none; /* Hilangkan fleksibilitas agar tidak memenuhi seluruh lebar */
+      width: 100%; /* Pastikan elemen memenuhi lebar layar */
+    }
+  
+    .mitra-table th,
+    .mitra-table td {
+      font-size: 12px; /* Sesuaikan ukuran font */
+      padding: 8px; /* Sesuaikan padding */
+    }
+  
+    .detail-button {
+      padding: 5px 8px; /* Kurangi ukuran tombol detail */
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Gaya untuk ponsel */
+    .filters {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .filters select,
+    .filters input,
+    .filters button {
+      width: 100%;
+    }
+  
+    .mitra-table th,
+    .mitra-table td {
+      font-size: 10px;
+      padding: 5px;
+    }
+  
+    .detail-button {
+      font-size: 10px;
+      padding: 4px 6px;
+    }
+  }
+  

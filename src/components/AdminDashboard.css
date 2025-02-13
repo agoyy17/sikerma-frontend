@@ -1,0 +1,360 @@
+/* Global Style */
+.beranda-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar {
+    background-color: #DAF2D9; /* Warna latar sidebar */
+    width: 220px; /* Lebar sidebar */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu li {
+    margin: 15px 0;
+  }
+  
+  .sidebar-button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #80C99D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-button:hover {
+    background-color: #6FB78A; /* Warna hover */
+  }
+
+  /* Gaya untuk submenu horizontal */
+  .submenu-horizontal {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px; /* Jarak submenu dari tombol utama */
+    gap: 10px; /* Jarak antar tombol submenu */
+    margin-top: 10px; /* Mengatur posisi vertikal agar tidak tumpang tindih */
+  }
+  
+  /* Gaya tombol submenu */
+  .submenu-horizontal button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .submenu-horizontal button:hover {
+    background-color: #4cae4c;
+  }
+
+  .map-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Sesuaikan sesuai kebutuhan */
+    height: 400px;     /* Sesuaikan sesuai kebutuhan */
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* Styling untuk Logo dan Navbar */
+  .logo {
+    height: 60px;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Banner Selamat Datang */
+  .welcome-banner {
+    background-color: #CCE5B2;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-banner h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Bagian Map Kerjasama */
+  .map-section {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .map-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .map-image {
+    width: 70%;
+    max-width: 800px;
+  }
+  
+  /* Bagian Informasi Kerjasama Global */
+  .info-section {
+    padding: 30px 50px;
+    text-align: center;
+  }
+  
+  .info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .info-section .btn-mitra {
+    background-color: #E8F5D9;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .info-section .btn-mitra:hover {
+    background-color: #D2E8C0;
+  }
+  
+  .chart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .chart-container {
+    width: 600px; /* Atur ukuran yang cukup besar agar teks tidak terpotong */
+    max-width: 100%;
+    margin: auto;
+  }
+  .chart-container .chartjs-legend {
+    pointer-events: none; /* Mencegah klik pada elemen legenda */
+    user-select: none; /* Mencegah teks agar tidak bisa di-select */
+  }
+  
+  /* Content Section Styling */
+  .beranda-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 50px;
+  }
+  
+  .content-box {
+    width: 45%;
+    padding: 20px;
+    background: #f4f4f4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .highlight {
+    color: #2D852D;
+  }
+  
+  .cooperation-type {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .progress-fill {
+    height: 10px;
+    background-color: #2D852D;
+    text-align: right;
+    color: white;
+    padding-right: 5px;
+    border-radius: 5px;
+  }
+  
+  /* News Section Styling */
+  .beranda-news {
+    margin-top: 40px;
+    padding: 20px 50px;
+  }
+  
+  .news-title {
+    text-align: center;
+    color: #2D852D;
+    margin-bottom: 20px;
+  }
+  
+  .news-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .news-item {
+    width: 30%;
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .news-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Bagian untuk menampilkan logo mitra */
+  .partner-logos {
+    background-color: #f4f4f4;
+    padding: 40px 50px;
+    text-align: center;
+  }
+  
+  .partner-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2D852D;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .partner-logo {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .partner-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 180px; /* Sesuaikan lebar sidebar */
+    }
+    
+    .sidebar-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  /* Untuk layar tablet (ukuran layar 768px atau lebih kecil) */
+  @media (max-width: 768px) {
+    .beranda-content {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .content-box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .news-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .news-item {
+      width: 80%;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+  
+    .map-section {
+      height: 300px;
+    }
+  
+    .chart-container {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  /* Untuk layar ponsel (ukuran layar 480px atau lebih kecil) */
+  @media (max-width: 480px) {
+    .nav a {
+      font-size: 14px;
+    }
+  
+    .welcome-banner h1 {
+      font-size: 24px;
+    }
+  
+    .info-section p {
+      font-size: 16px;
+    }
+  
+    .info-section .btn-mitra {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    .news-item p {
+      font-size: 12px;
+    }
+  
+    .chart-container {
+      max-width: 300px;
+    }
+  
+    .partner-title {
+      font-size: 20px;
+    }
+  
+    .partner-logo {
+      width: 80px;
+    }
+  }

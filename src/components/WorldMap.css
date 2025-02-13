@@ -1,0 +1,22 @@
+/* WorldMap.css */
+
+.map-container {
+  width: 120%;
+  height: 400%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Opsional: menambahkan radius sudut */
+}
+  
+@media (max-width: 768px) {
+    .leaflet-map {
+      height: 300px; /* Sesuaikan tinggi untuk tampilan lebih kecil */
+    }
+  }
+  

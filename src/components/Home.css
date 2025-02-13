@@ -7,6 +7,19 @@
   padding: 0;
 }
 
+.map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Sesuaikan sesuai kebutuhan */
+  height: 400px;     /* Sesuaikan sesuai kebutuhan */
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 /* Styling untuk Logo dan Navbar */
 .logo {
   height: 60px;
@@ -78,15 +91,34 @@
   background-color: #D2E8C0;
 }
 
+.chart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+.chart-container {
+  width: 600px; /* Atur ukuran yang cukup besar agar teks tidak terpotong */
+  max-width: 100%;
+  margin: auto;
+}
+.chart-container .chartjs-legend {
+  pointer-events: none; /* Mencegah klik pada elemen legenda */
+  user-select: none; /* Mencegah teks agar tidak bisa di-select */
+}
+
 /* Content Section Styling */
 .home-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin: 20px 50px;
 }
 
 .content-box {
-  width: 48%;
+  width: 45%;
   padding: 20px;
   background: #f4f4f4;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -187,4 +219,75 @@
 .partner-logo:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+
+/* Untuk layar tablet (ukuran layar 768px atau lebih kecil) */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .content-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-item {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+  .map-section {
+    height: 300px;
+  }
+
+  .chart-container {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Untuk layar ponsel (ukuran layar 480px atau lebih kecil) */
+@media (max-width: 480px) {
+  .nav a {
+    font-size: 14px;
+  }
+
+  .welcome-banner h1 {
+    font-size: 24px;
+  }
+
+  .info-section p {
+    font-size: 16px;
+  }
+
+  .info-section .btn-mitra {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .news-item p {
+    font-size: 12px;
+  }
+
+  .chart-container {
+    max-width: 300px;
+  }
+
+  .partner-title {
+    font-size: 20px;
+  }
+
+  .partner-logo {
+    width: 80px;
+  }
 }

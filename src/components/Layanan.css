@@ -1,0 +1,77 @@
+/* Gaya umum untuk halaman layanan */
+.layanan-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.layanan-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.layanan-header h1 {
+    color: #2D852D;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.layanan-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.layanan-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.layanan-info h2 {
+    font-size: 1.2rem;
+    color: #2D852D;
+    margin: 0;
+}
+
+.layanan-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+.btn-buka {
+    background-color: #2D852D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buka:hover {
+    background-color: #1a5f1a;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .layanan-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-buka {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}

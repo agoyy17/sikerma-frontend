@@ -1,50 +1,58 @@
 /* Styling untuk form register */
 .register-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #DAF2D9; /* Sesuaikan dengan warna latar belakang hijau */
-  }
-  
-  .register-box {
-    background-color: #F5F5F5; /* Warna latar belakang form */
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px; /* Sesuaikan ukuran box */
-  }
-  
-  .register-logo {
-    width: 100px; /* Sesuaikan ukuran logo */
-    margin-bottom: 20px;
-  }
-  
-  .register-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .register-input {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 10px;
-    border: 1px solid #CCC;
-    background-color: #EAEAEA; /* Sesuaikan warna input */
-  }
-  
-  .register-button {
-    padding: 10px;
-    background-color: #80C99D; /* Warna tombol sesuai gambar */
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .register-button:hover {
-    background-color: #6FB78A; /* Warna saat hover */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: #DAF2D9; /* Sesuaikan dengan warna latar belakang hijau */
+}
+
+.register-box {
+  background-color: #F5F5F5; /* Warna latar belakang form */
+  padding: 60px 40px; /* Tambahkan padding */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Batasi lebar maksimal form */
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Pastikan form mengambil lebar penuh */
+}
+
+.register-input {
+  padding: 15px; /* Tambahkan ukuran padding */
+  margin: 15px 0; /* Tambahkan jarak antar input */
+  border-radius: 10px;
+  border: 1px solid #CCC;
+  background-color: #EAEAEA; /* Sesuaikan warna input */
+  font-size: 16px; /* Perbesar ukuran teks */
+  width: 100%; /* Input mengambil lebar penuh */
+  box-sizing: border-box; /* Pastikan padding tidak melebihi lebar elemen */
+}
+
+.register-button {
+  padding: 15px; /* Tambahkan padding */
+  background-color: #80C99D; /* Warna tombol sesuai gambar */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px; /* Tambahkan margin atas */
+  font-size: 16px; /* Perbesar ukuran teks tombol */
+  width: 100%; /* Tombol mengambil lebar penuh */
+  box-sizing: border-box; /* Pastikan padding tidak melebihi lebar elemen */
+}
+
+.register-button:hover {
+  background-color: #6FB78A; /* Warna saat hover */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+}

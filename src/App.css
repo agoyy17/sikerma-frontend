@@ -1,9 +1,11 @@
+/* Gaya dasar untuk aplikasi */
 .App {
   text-align: center;
+  padding: 0px; /* Tambahkan padding agar tidak terlalu mepet di tepi */
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin; /* Sesuaikan ukuran logo agar lebih kecil di layar yang lebih kecil */
   pointer-events: none;
 }
 
@@ -13,6 +15,7 @@
   }
 }
 
+/* Header aplikasi yang responsif */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -20,19 +23,46 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin); /* Sesuaikan font agar tetap proporsional */
   color: white;
+  padding: 20px;
 }
 
+/* Link aplikasi dengan ukuran dan warna yang responsif */
 .App-link {
   color: #61dafb;
+  font-size: calc(10px + 1vmin); /* Pastikan link tidak terlalu besar di layar kecil */
 }
 
+/* Animasi logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Media query untuk tablet (lebar layar di bawah 768px) */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(10px + 1.5vmin); /* Kurangi ukuran font untuk tablet */
+  }
+
+  .App-logo {
+    height: 35vmin; /* Perbesar logo sedikit di layar tablet */
+  }
+}
+
+/* Media query untuk ponsel (lebar layar di bawah 480px) */
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(8px + 1.5vmin); /* Ukuran font lebih kecil untuk ponsel */
+    padding: 10px; /* Kurangi padding di ponsel */
+  }
+
+  .App-logo {
+    height: 40vmin; /* Ukuran logo lebih besar untuk ponsel */
   }
 }

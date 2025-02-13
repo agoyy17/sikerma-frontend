@@ -1,0 +1,299 @@
+/* Struktur dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.repositori-container {
+    width: 100%; /* Gunakan seluruh lebar layar */
+    max-width: 100%; /* Tidak ada batas maksimal untuk container */
+    margin: 0; /* Hilangkan margin */
+    padding: 0; /* Hilangkan padding */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Konten utama */
+.repositori-main {
+    flex: 1;
+    padding: 20px;
+    width: 100%; /* Pastikan konten memenuhi seluruh lebar */
+}
+
+.repositori-main h2 {
+    text-align: center;
+    color: #2D852D;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Sesuaikan dengan lebar layar */
+    max-width: 100%; /* Hilangkan batas maksimal */
+}
+
+/* Tools tabel */
+.table-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.table-tools .btn-export {
+    background-color: #D9F5D9;
+    border: none;
+    padding: 10px 15px;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-tools select {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+/* Tabel */
+.responsive-table {
+    width: 100%; /* Pastikan tabel menggunakan seluruh lebar */
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.responsive-table th,
+.responsive-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.responsive-table th {
+    background-color: #CCE5B2;
+    color: #333;
+    font-weight: bold;
+}
+
+.responsive-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagination-btn {
+    background-color: #2D852D;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .table-tools {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-tools .btn-export {
+        margin-bottom: 10px;
+    }
+
+    .repositori-nav {
+        font-size: 12px;
+    }
+
+    .responsive-table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title h1 {
+        font-size: 14px;
+    }
+
+    .pagination-btn {
+        padding: 8px 10px;
+    }
+}
+
+/* 
+.approve-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .approve-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .reject-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .reject-btn:hover {
+    background-color: #e53935;
+  }
+  .download-btn:hover {
+    background-color: #1e88e5;
+  }
+  
+  .download-icon {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: none;
+    cursor: pointer;
+  }
+  .download-icon img {
+    border: none;
+  }
+  .download-icon:focus {
+    outline: none; /* Menghilangkan border focus jika tombol diklik */
+  /* } */
+  .button-group {
+    display: flex;              /* Menyusun tombol secara horizontal */
+    align-items: center;        /* Menjaga tinggi tombol tetap sejajar */
+    gap: 10px;                  /* Memberikan jarak antar tombol */
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;         /* Menentukan padding tombol */
+    font-size: 14px;            /* Ukuran font tombol */
+    border-radius: 5px;         /* Membulatkan sudut tombol */
+    cursor: pointer;
+  }
+  
+  .approve-btn, .reject-btn {
+    background-color: #4CAF50; /* Warna latar belakang tombol Setujui dan Tolak */
+    color: white;
+    border: 1px solid #4CAF50; /* Border dengan warna yang sama */
+  }
+  
+  .reject-btn {
+    background-color: #f44336; /* Warna latar belakang tombol Tolak */
+    border: 1px solid #f44336; /* Border dengan warna yang sama */
+  }
+  
+  button:hover {
+    opacity: 0.8;               /* Efek hover pada tombol */
+  }
+  
+  .download-icon {
+    padding: 0;                 /* Menghilangkan padding di sekitar gambar */
+  }
+  
+  /* .download-icon img {
+    width: 24px;                /* Ukuran gambar untuk tombol download */
+    /* height: 24px;
+  }
+   */
+  .comment-icon-btn {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.comment-icon {
+  width: 24px; /* Sesuaikan ukuran ikon */
+  height: 24px; /* Sesuaikan ukuran ikon */
+}
+
+.comment-icon-btn:hover .comment-icon {
+  opacity: 0.8; /* Efek hover pada ikon */
+}
+
+.comment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.comment-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.comment-textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+.comment-text {
+  font-style: italic;
+  color: #555;
+}

@@ -4,7 +4,7 @@ import './Footer.css'; // Menghubungkan ke file CSS
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2024 - Universitas YARSI</p>
+      <p>&copy; 2024 - Universitas YARSI | Tim Kie Raha</p>
     </footer>
   );
 };

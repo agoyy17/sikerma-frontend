@@ -1,0 +1,286 @@
+/* Container Utama */
+.mou-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.mou-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Tombol Tambah */
+.add-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Tabel */
+.table-container {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #e0f2e0;
+  color: #333;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.pagination span {
+  cursor: pointer;
+  color: #4caf50;
+}
+
+.pagination span:hover {
+  text-decoration: underline;
+}
+
+/* Notes */
+.notes {
+  margin-top: 20px;
+}
+
+.notes label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  resize: none;
+}
+
+/* Pesan restriksi ketika bukan admin */
+.restricted {
+  color: red; /* Teks merah sebagai tanda peringatan */
+  font-size: 12px; /* Ukuran teks kecil */
+  margin-top: 5px; /* Jarak dari elemen dropdown */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Dropdown nonaktif untuk non-admin */
+select:disabled {
+  background-color: #e9ecef; /* Warna latar dropdown nonaktif */
+  color: #6c757d; /* Warna teks abu-abu */
+  cursor: not-allowed; /* Cursor tanda tidak bisa diubah */
+}
+
+/* Tombol Aksi untuk Admin */
+.status-actions {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.approve-button,
+.reject-button {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.approve-button {
+  background-color: #4caf50; /* Hijau */
+}
+
+.approve-button:hover {
+  background-color: #45a049;
+}
+
+.reject-button {
+  background-color: #f44336; /* Merah */
+}
+
+.reject-button:hover {
+  background-color: #e53935;
+}
+
+/* Overlay Modal */
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Warna gelap transparan */
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1000; /* Menempatkan modal di atas konten lain */
+}
+
+/* Konten Modal */
+.modal-content {
+background: #fff;
+width: 90%;
+max-width: 500px; /* Lebar maksimal modal */
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Header Modal */
+.modal-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 15px;
+border-bottom: 1px solid #ddd;
+background-color: #4caf50;
+color: white;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.modal-header h2 {
+margin: 0;
+font-size: 1.2em;
+}
+
+.close-btn {
+background: none;
+border: none;
+font-size: 1.5em;
+color: white;
+cursor: pointer;
+}
+
+.close-btn:hover {
+color: #e0e0e0;
+}
+
+/* Body Modal */
+form {
+padding: 15px;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+text-align: left;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 3px;
+font-size: 0.9em;
+}
+
+.form-group input[type="file"] {
+padding: 5px;
+}
+
+.form-group small {
+display: block;
+margin-top: 5px;
+color: #666;
+font-size: 0.8em;
+}
+
+/* Footer Modal */
+.modal-footer {
+display: flex;
+justify-content: flex-end;
+gap: 10px;
+padding: 10px 15px;
+border-top: 1px solid #ddd;
+background-color: #f9f9f9;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.submit-btn {
+background-color: #4caf50;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.submit-btn:hover {
+background-color: #45a049;
+}
+
+.cancel-btn {
+background-color: #f44336;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.cancel-btn:hover {
+background-color: #e53935;
+}
+
+/* Animasi Modal */
+@keyframes fadeIn {
+from {
+  opacity: 0;
+  transform: scale(0.95);
+}
+to {
+  opacity: 1;
+  transform: scale(1);
+}
+}

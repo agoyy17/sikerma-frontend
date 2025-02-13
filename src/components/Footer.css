@@ -1,6 +1,31 @@
-Footer {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
     background-color: #2D852D;
     color: white;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
+    font-size: 1rem; /* Ukuran font dasar */
+    position: relative;
+}
+
+/* Media query untuk layar dengan lebar maksimum 768px (tablet) */
+@media (max-width: 768px) {
+    footer {
+        padding: 8px 0; /* Mengurangi padding */
+        font-size: 0.9rem; /* Sedikit memperkecil ukuran font */
+    }
+}
+
+/* Media query untuk layar dengan lebar maksimum 480px (ponsel) */
+@media (max-width: 480px) {
+    footer {
+        padding: 6px 0; /* Mengurangi padding lebih banyak di layar kecil */
+        font-size: 0.8rem; /* Ukuran font lebih kecil agar proporsional */
+    }
 }

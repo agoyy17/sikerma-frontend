@@ -15,7 +15,7 @@
 }
 
 .login-input {
-  width: 280px; /* Lebar input sama dengan tombol */
+  width: 250px; /* Lebar input sama dengan tombol */
   padding: 10px;
   margin: 10px auto; /* Margin disesuaikan agar rata tengah */
   border: 1px solid #ccc;
@@ -24,7 +24,7 @@
 }
 
 .login-button {
-  width: 280px; /* Lebar tombol disamakan dengan input */
+  width: 250px; /* Lebar tombol disamakan dengan input */
   padding: 10px;
   background-color: #61dafb;
   color: #fff;
@@ -55,4 +55,10 @@
 
 .login-links a:hover {
   text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
 }
